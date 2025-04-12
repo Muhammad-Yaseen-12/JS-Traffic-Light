@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(./bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.traffic-light {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 60px;
+    background: #333;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.light {
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 50%;
+    background: #111;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+.light.active {
+    opacity: 1;
+}
+
+.red.active {
+    background: red;
+}
+
+.yellow.active {
+    background: yellow;
+}
+
+.green.active {
+    background: rgb(12, 252, 12);
+}
+
+.car {
+    position: absolute;
+    bottom: 80px;
+    left: 100px;
+    width: 600px;
+    height: 300px;
+    background: url('https://static.vecteezy.com/system/resources/thumbnails/038/967/706/small/red-cartoon-car-png.png') no-repeat center center;
+    background-size: contain;
+    animation: drive 6s linear infinite;
+    animation-play-state: paused;
+}
+
+@keyframes drive {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
