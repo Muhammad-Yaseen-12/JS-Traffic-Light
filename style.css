@@ -56,7 +56,7 @@ body {
     left: 100px;
     width: 600px;
     height: 300px;
-    background: url('https://static.vecteezy.com/system/resources/thumbnails/038/967/706/small/red-cartoon-car-png.png') no-repeat center center;
+    background: url('./red-cartoon-car-.png') no-repeat center center;
     background-size: contain;
     animation: drive 6s linear infinite;
     animation-play-state: paused;
